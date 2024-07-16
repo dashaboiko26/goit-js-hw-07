@@ -1,0 +1,73 @@
+.controls {
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    height: 104px;
+    background: #f6f6fe;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.boxes {
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    height: 104px;
+    background: #f6f6fe;
+    display: flex;
+    gap: 16px;
+}
+
+input {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+button[data-create] {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background: #4e75ff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+button[data-create]:hover {
+    background: #6c8cff;
+}
+
+button[data-destroy] {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+    background: #ff4e4e;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #fff;
+
+}
+
+button[data-destroy]:hover {
+    background: #ff7070;
+}
