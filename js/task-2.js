@@ -25,23 +25,8 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector(`.gallery`);
-
-const imageElements = images
-  .map(
-    (image) => `<li>
-    <img src="${image.url}" alt="${image.alt}">
-  </li>`
-  )
+const list = document.querySelector("ul.gallery");
+const pictures = images
+  .map((image) => `<li> <img src="${image.url}" alt="${image.alt}" /></li>`)
   .join("");
-
-gallery.insertAdjacentHTML("beforeend", imageElements);
-
-gallery.style.listStyleType = "none";
-gallery.style.display = "flex";
-gallery.style.flexWrap = "wrap";
-gallery.style.gap = "20px";
-
-const galleryItems = gallery.querySelectorAll("li img");
-galleryItems.forEach((item) => (item.style.width = "400px"));
-galleryItems.forEach((item) => (item.style.height = "400px"));
+list.insertAdjacentHTML("afterbegin", pictures);
